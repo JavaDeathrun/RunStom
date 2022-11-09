@@ -1,17 +1,13 @@
-# microstom
+# RunStom
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-[![GitHub](https://img.shields.io/github/license/KlainStom/microstom?style=flat-square&color=b2204c)](https://github.com/KlainStom/microstom/blob/master/LICENSE)
-[![GitHub Repo stars](https://img.shields.io/github/stars/KlainStom/microstom?style=flat-square)](https://github.com/KlainStom/microstom/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/KlainStom/microstom?style=flat-square)](https://github.com/KlainStom/microstom/network/members)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/KlainStom/microstom?style=flat-square)](https://github.com/KlainStom/microstom/releases/latest)
-[![GitHub all releases](https://img.shields.io/github/downloads/KlainStom/microstom/total?style=flat-square)](https://github.com/KlainStom/microstom/releases)
+[![GitHub](https://img.shields.io/github/license/JavaDeathrun/RunStom?style=flat-square&color=b2204c)](https://github.com/JavaDeathrun/RunStom/blob/master/LICENSE)
+[![GitHub Repo stars](https://img.shields.io/github/stars/JavaDeathrun/RunStom?style=flat-square)](https://github.com/JavaDeathrun/RunStom/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/JavaDeathrun/RunStom?style=flat-square)](https://github.com/JavaDeathrun/RunStom/network/members)
 
-Microstom is a minimal minecraft server with [Minestom](https://github.com/Minestom/Minestom) as its core.
+RunStom is a minimal minecraft server with [Minestom](https://github.com/Minestom/Minestom) as its core.
 
-Microstom seeks to be a minimal implementation of a Minestom server.
-So it should not include any feature that could have been implemented in an extension.
-Every piece of content has to be added as extension, (almost) nothing is there by default.
+RunStom is the server software in use by JavaDeathrun and is a fork of [Microstom](https://github.com/KlainStom/microstom) with a few added features specific to JavaDeathrun
 
 ## Table of Contents
 
@@ -23,13 +19,13 @@ Every piece of content has to be added as extension, (almost) nothing is there b
 - [License](#license)
 
 ## Install
-You could either just download a [release](https://github.com/KlainStom/microstom/releases) or you compile the server yourself using the following commands under Linux
+you compile the server yourself using the following commands under Linux
 ```shell
-git clone https://github.com/KlainStom/microstom.git
-cd microstom
+git clone https://github.com/JavaDeathrun/RunStom.git
+cd RunStom
 ./gradlew build
 ```
-The server jar will be located at `build/libs/Microstom-<VERSION>.jar`.
+The server jar will be located at `build/libs/RunStom-<VERSION>.jar`.
 
 Note that for compiling you need to use a JDK 17.
 
@@ -37,14 +33,14 @@ Note that for compiling you need to use a JDK 17.
 To run the server you need to have a Java 17 runtime installed.
 Use the following command to start the server for the first time.
 ```shell
-java -jar Microstom-<VERSION>.jar
+java -jar RunStom-<VERSION>.jar
 ```
 This generates a `start.sh` script and a settings file with these default values:
 ```json5
 {
   "SERVER_IP": "localhost",
   "SERVER_PORT": 25565,
-  "MODE": "OFFLINE", // may be OFFLINE, ONLINE, BUNGEECORD or VELOCITY
+  "MODE": "ONLINE", // may be OFFLINE, ONLINE, BUNGEECORD or VELOCITY
   "VELOCITY_SECRET": "",
   "TPS": null, // default 20
   "CHUNK_VIEW_DISTANCE": null, // default 8
@@ -67,7 +63,10 @@ This server itself does not add some API. But it features [Minestom's API](https
 
 ## Maintainers
 
-[@off-by-0point5](https://github.com/off-by-0point5)
+Fork from [@off-by-0point5](https://github.com/off-by-0point5)
+
+Development of this fork [@Zax71](https://github.com/zax71)
+
 
 ## Contributing
 
