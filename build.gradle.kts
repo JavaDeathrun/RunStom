@@ -4,7 +4,7 @@ plugins {
     java
 }
 
-var displayName = "Microstom"
+var displayName = "RunStom"
 
 group = "com.github.klainstom"
 version = "6.0.0-SNAPSHOT"
@@ -33,7 +33,7 @@ tasks {
 
     shadowJar {
         manifest {
-            attributes("Main-Class" to "com.github.klainstom.microstom.Server")
+            attributes("Main-Class" to "com.github.JavaDeathrun.RunStom.Server")
         }
         archiveBaseName.set(displayName)
         archiveClassifier.set("")

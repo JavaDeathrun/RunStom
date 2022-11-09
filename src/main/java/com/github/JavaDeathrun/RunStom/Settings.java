@@ -1,4 +1,4 @@
-package com.github.klainstom.microstom;
+package com.github.JavaDeathrun.RunStom;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -52,7 +52,7 @@ public class Settings {
             this.SERVER_IP = "localhost";
             this.SERVER_PORT = 25565;
 
-            this.MODE = RunMode.OFFLINE;
+            this.MODE = RunMode.ONLINE;
             this.VELOCITY_SECRET = "";
 
             this.TPS = null;

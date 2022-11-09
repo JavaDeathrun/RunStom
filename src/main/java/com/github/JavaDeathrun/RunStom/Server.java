@@ -1,7 +1,7 @@
-package com.github.klainstom.microstom;
+package com.github.JavaDeathrun.RunStom;
 
-import com.github.klainstom.microstom.commands.Commands;
-import com.github.klainstom.microstom.commands.Permissions;
+import com.github.JavaDeathrun.RunStom.commands.Commands;
+import com.github.JavaDeathrun.RunStom.commands.Permissions;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.minestom.server.MinecraftServer;
